@@ -12,6 +12,7 @@ import CommunityPartners from './Network/CommunityPartners.jsx'
 import Researchers from './Network/Researchers.jsx'
 import CommunityProjects from './Network/CommunityProjects.jsx'
 import OfficeEngagement from './Network/OfficeEngagement.jsx'
+import instituteMapIcon from '/assets/institute_map.png';
 
 
 function HomeComponent() {
@@ -40,6 +41,7 @@ function HomeComponent() {
                     <Route path="network/researchers" element={<Researchers/>}/>
                     <Route path="network/community-engaged-projects" element={<CommunityProjects/>}/>
                     <Route path="network/office-of-community-engagement" element={<OfficeEngagement/>}/>
+                    <Route path="network/engagement-map" element={<CommunityPartners markerIcon={instituteMapIcon} showSidePanel={false}/>}/>
 
                     <Route path="/resources" element={<ResourcesComponent/>}/>
 
